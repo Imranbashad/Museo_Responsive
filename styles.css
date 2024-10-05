@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+body {
+  background-color: #1a1c19;
+  
+}
+:root {
+  --primary-color: #b1a592;
+  --secondary-color: #1a1c19;
+  --logo: #323025;
+}
+
+/* Navbar -------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b1a592;
+  border-radius: 50px;
+  color: var(--primary-color);
+  box-sizing: border-box;
+}
+header {
+  padding: 10px 40px;
+}
+.navbar div:first-child ul li:first-child {
+  background-color: var(--logo);
+  border-color: var(--logo);
+  width: 400px;
+  text-align: center;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  border: 1px solid #b1a592;
+  border-radius: 50px;
+  padding: 10px 50px;
+  margin: 3px;
+}
+/* --------cards----------------------------- */
+.cards {
+  display: flex;
+  padding: 10px 40px;
+}
+/* -------------left card ----------------- */
+.left-card {
+  background-color: #dfd6c5;
+  min-height: 100vh;
+  min-width: 30vw;
+  border-radius: 30px;
+}
+.left-card-text{
+  padding: 20px 30px;
+}
+.left-card h1{
+  margin: 20px 0 0 0;
+  width: fit-content;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 30px;
+}
+.left-card h2{
+  text-decoration: underline;
+}
+.left-card img{
+  width: 100%;
+  height: 550px;
+  margin: 10px 0px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+  padding: 10px 20px;
+}
+input {
+  background-color: inherit;
+  border-style: none;
+}
+/* upepr cared ------------------ */
+.upper-card{
+  background-color: #8E886D;
+  margin: 0 0 0 20px;
+  border-radius: 30px;
+  max-width: 100%;
+  min-height: 40%;
+}
+.upper-card-text{
+  display: flex;
+  padding:20px 30px;
+  gap:20px 
+}
+.upper-card-text div:first-child{
+  width: 70%;
+}
+.upper-card img{
+  width:100%;
+  min-height: 200px;
+  margin-top: 20px;
+}
+p{
+  margin-top: 20px;
+}
+.upper-card .button{
+  padding: 20px 40px;
+}
+
+.upper-card h1{
+  margin: 20px 20px 0 0;
+  width: fit-content;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 30px;
+}
+.upper-card h2{
+  text-decoration: underline;
+}
+/* loerr fdsd---------------------------------- */
+.lower-card{
+  display: flex;
+  max-width: 100%;
+}
+.lower-left-card{
+  margin: 20px 0 0 20px;
+  padding: 10px;
+  border-radius: 30px;
+  max-width: 90%;
+  min-width: 50%;
+  background-color: #916E58;
+  /* min-height:60% ; */
+  min-height: 55vh;
+}
+.lower-left-card img{
+  width: 100%;
+
+}
+.lower-left-card p{
+  margin-bottom: 10px;
+}
+
+/* --------------------- */
+.lower-right-card {
+  background-color: #B1A48E;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 90%;
+  min-width: 45%;
+  margin: 20px 0 0 20px;
+  min-height: 55vh;
+}
+.lower-right-card h1{
+  margin: 20px 0 0 0;
+  width: fit-content;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 30px;
+}
+.last{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+hr{
+  border: 1px solid black;
+}
+.lower-right-card p{
+  margin-bottom: 30px;
+}
+.navbar div ul li:not(:first-child):hover {
+  color:#1a1c19;
+  background-color: #dfd6c5;
+
+}
+.contact:hover{
+  color:#1a1c19;
+  background-color: #dfd6c5;
+}
+h2{
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  .cards{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .right-card{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .upper-card{
+    margin: 20px 0px;
+  }
+  .lower-left-card{
+    margin: 20px 0px;
+  }
+}
